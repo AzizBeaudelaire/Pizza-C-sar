@@ -9,6 +9,16 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-serif font-bold mb-2">Pizza Cézar</h3>
             <p className="text-gray-400">Le goût de l'Italie depuis 1990</p>
+            <div className="mt-4">
+              <a 
+                href="https://www.ubereats.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full transition"
+              >
+                Commander sur Uber Eats
+              </a>
+            </div>
           </div>
           
           <div className="flex gap-6">
