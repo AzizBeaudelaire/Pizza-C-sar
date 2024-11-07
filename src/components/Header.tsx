@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pizza } from 'lucide-react';
+import { Pizza, MapPin } from 'lucide-react';
 import { Link } from './Link';
 
 export function Header() {
@@ -15,13 +15,15 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#home">Accueil</Link>
             <Link href="#menu">Menu</Link>
-            <Link href="#testimonials">Avis</Link>
             <Link href="#contact">Contact</Link>
           </nav>
           
-          <button className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition">
-            Commander maintenant
-          </button>
+          <Link href="#contact">
+            <button className="flex items-center gap-2 text-red-600 hover:text-red-700 transition">
+              <MapPin className="h-5 w-5" />
+              <span>Nous trouver</span>
+            </button>
+          </Link>
         </div>
       </div>
     </header>
